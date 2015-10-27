@@ -555,8 +555,7 @@ class TVDBAgent(Agent.TV_Shows):
     try: metadata.duration = int(series_data['runtime'])
     except: pass
 
-    # TODO Couldn't find this in the new API - @maxg 2015-10-14
-    try: metadata.rating = float(series_data['rating'])
+    try: metadata.rating = float(series_data['siteRating'])
     except: pass
 
     metadata.genres = series_data.get('genre', [])
@@ -630,8 +629,7 @@ class TVDBAgent(Agent.TV_Shows):
           try: episode.absolute_number = int(episode_details['absoluteNumber'])
           except: pass
 
-          # TODO Couldn't find this in the new API - @maxg 2015-10-14
-          try: episode.rating = float(episode_details['rating'])
+          try: episode.rating = float(episode_details['siteRating'])
           except: pass
 
           try:    

@@ -1,0 +1,36 @@
+[
+  {
+    "id": "episodeplot",
+    "label": "Episode Plot Summary Source: ",
+    "type": "enum",
+    "values": [
+      "",
+      "The TV Database",
+      "The Movie Database"
+    ],
+    "default": "The TV Database"
+  },
+  {
+    "id": "seriesplot",
+    "label": "Series Plot Summary Source: ",
+    "type": "enum",
+    "values": [
+      "",
+      "The TV Database",
+      "The Movie Database"
+    ],
+    "default": "The TV Database"
+  },
+  {
+      "id": "ratings",
+      "label": "Ratings Source:",
+      "type": "enum",
+      "values": [
+          "",
+          "The TV Database",
+          "The Movie Database",
+          "Average of All Available Scores",
+      ],
+      "default": "Average of All Available Scores"
+  }
+]

@@ -10,7 +10,7 @@ META_TVDB_TITLE_SEARCH = 'http://meta.plex.tv/tv/titles/'
 
 # TVDB V2 API
 TVDB_BASE_URL = 'https://thetvdb.com'
-TVDB_V2_PROXY_SITE = 'https://tvdb2.plex.tv'
+TVDB_V2_PROXY_SITE = 'https://api-beta.thetvdb.com'  # TODO Start using TVDB's production api (TVDB is behind CF) when available and possibly a plex proxy for it
 TVDB_LOGIN_URL = '%s/login' % TVDB_V2_PROXY_SITE
 TVDB_SEARCH_URL = '%s/search/series?name=%%s' % TVDB_V2_PROXY_SITE
 TVDB_SERIES_URL = '%s/series/%%s' % TVDB_V2_PROXY_SITE

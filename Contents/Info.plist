@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleIdentifier</key>
-	<string>com.plexapp.agents.thetvdb</string>
+	<string>com.github.charlessuh.plexapp.agents.thetvdb</string>
 	<key>PlexAgentAttributionText</key>
 	<string>
 		&lt;a href=&quot;http://thetvdb.com&quot;&gt;TheTVDB.com&lt;/a&gt; is a community driven database of television shows. &lt;br/&gt;

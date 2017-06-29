@@ -219,7 +219,7 @@ def metadata_people(people_list, meta_people_obj):
 
 class TVDBAgent(Agent.TV_Shows):
 
-  name = 'TheTVDB'
+  name = 'My TheTVDB'
   languages = [Locale.Language.English, 'fr', 'zh', 'sv', 'no', 'da', 'fi', 'nl', 'de', 'it', 'es', 'pl', 'hu', 'el', 'tr', 'ru', 'he', 'ja', 'pt', 'cs', 'ko', 'sl', 'hr']
 
   def dedupe(self, results):
@@ -413,11 +413,11 @@ class TVDBAgent(Agent.TV_Shows):
 
   def search(self, results, media, lang, manual=False):
 
-    if media.primary_agent == 'com.plexapp.agents.themoviedb':
+    if media.primary_agent == 'com.github.charlessuh.plexapp.agents.themoviedb':
 
       # Get the TVDB id from the Movie Database Agent
       tvdb_id = Core.messaging.call_external_function(
-        'com.plexapp.agents.themoviedb',
+        media.primary_agent,
         'MessageKit:GetTvdbId',
         kwargs = dict(
           tmdb_id = media.primary_metadata.id
